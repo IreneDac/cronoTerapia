@@ -1,4 +1,4 @@
-package com.example.registroMedicamentos_app
+package com.example.cronoTerapia
 
 import io.flutter.embedding.android.FlutterActivity
 

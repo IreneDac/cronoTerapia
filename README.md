@@ -1,4 +1,4 @@
-# registroMedicamentos_app
+# cronoTerapia
 
 A new Flutter project.
 

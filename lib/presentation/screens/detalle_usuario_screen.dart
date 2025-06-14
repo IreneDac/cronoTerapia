@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/presentation/screens/registro_informes_medicos_screen.dart';
+import '/presentation/screens/registro_informes_medicos_screen.dart';
 import '/presentation/screens/tratamientos_screen.dart';
 import '/presentation/screens/hoja_medicacion_screen.dart';
 import '/presentation/screens/alertas_toma_medicacion.dart';
@@ -156,7 +156,9 @@ class _DetalleUsuarioScreenState extends State<DetalleUsuarioScreen> {
         onPressed: () {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => PdfManagerScreen()),
+            MaterialPageRoute(
+              builder: (context) => RegistroInformesMedicosScreen(),
+            ),
           );
         },
       ),

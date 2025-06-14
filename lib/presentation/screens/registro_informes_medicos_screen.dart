@@ -6,12 +6,14 @@ import 'package:path_provider/path_provider.dart';
 
 import 'pdf_preview_screen.dart';
 
-class PdfManagerScreen extends StatefulWidget {
+class RegistroInformesMedicosScreen extends StatefulWidget {
   @override
-  _PdfManagerScreenState createState() => _PdfManagerScreenState();
+  _RegistroInformesMedicosScreenState createState() =>
+      _RegistroInformesMedicosScreenState();
 }
 
-class _PdfManagerScreenState extends State<PdfManagerScreen> {
+class _RegistroInformesMedicosScreenState
+    extends State<RegistroInformesMedicosScreen> {
   List<File> _pdfFiles = [];
 
   @override

@@ -1,6 +1,6 @@
 # cronoTerapia
 
-A new Flutter project.
+cronoTerapia
 
 ## Getting Started
 

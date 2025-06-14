@@ -1,6 +1,6 @@
 # cronoTerapia
 
-A new Flutter project.
+Sistema de Apoyo al Paciente para la Autogestión de Terapias Crónicas.
 
 ## Getting Started
 

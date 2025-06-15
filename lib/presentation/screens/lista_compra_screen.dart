@@ -47,7 +47,7 @@ class _ListaCompraMedicamentosScreenState
   void _compartirLista() {
     if (_medicamentos.isEmpty) return;
 
-    final buffer = StringBuffer("📋 Lista de medicamentos por reponer:\n\n");
+    final buffer = StringBuffer("📋 Lista de compra:\n\n");
 
     for (var med in _medicamentos) {
       buffer.writeln("- ${med['nombre']} (CN: ${med['cn']})");

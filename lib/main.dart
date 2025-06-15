@@ -44,7 +44,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: '', home: MainScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: '',
+      home: MainScreen(),
+    );
   }
 }
 
@@ -80,20 +84,20 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title: Flexible(
           child: Text(
-            'Sistema de Apoyo al Paciente para la Autogestión de Terapias Crónicas',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            'CRONOTERAPIA: Sistema de Apoyo al Paciente para la Autogestión de Terapias Crónicas',
+            style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
             overflow: TextOverflow.ellipsis,
-            maxLines: 2,
+            maxLines: 3,
             softWrap: true,
           ),
         ),
-        actions: [
+        /*actions: [
           IconButton(
             icon: Icon(Icons.delete_forever),
             tooltip: 'Borrar base de datos',
             onPressed: () async {
               final databasesPath = await getDatabasesPath();
-              String path = '$databasesPath/AplicacionMedicamentos.db';
+              String path = '$databasesPath/CronoTerapia.db';
 
               await deleteDatabase(path);
 
@@ -106,7 +110,7 @@ class _MainScreenState extends State<MainScreen> {
               );
             },
           ),
-        ],
+        ],*/
       ),
 
       body: Padding(

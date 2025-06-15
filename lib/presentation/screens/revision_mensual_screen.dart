@@ -160,16 +160,30 @@ class _RevisionMensualScreenState extends State<RevisionMensualScreen> {
                   const SizedBox(height: 8),
 
                   _buildRow('A la hora:', item['iMarcadaComoTomada']),
-                  _buildRow('Pospuesta:', item['incumplimiento'], isBold: true),
+                  _buildRow(
+                    'Pospuesta:',
+                    item['incumplimiento'],
+                    isBold: item['incumplimiento'] > 0,
+                  ),
                   _buildRow(
                     'Sin acción:',
                     item['incumplimientoSinAccion'],
-                    isBold: true,
+                    isBold: item['incumplimientoSinAccion'] > 0,
                   ),
 
                   const SizedBox(height: 12),
 
-                  _buildRow('Efecto adverso:', item['efectoAdverso'] ?? '-'),
+                  _buildRow(
+                    'Efecto adverso:',
+                    item['efectoAdverso'] ?? '-',
+                    isBold:
+                        (item['efectoAdverso'] != null &&
+                            item['efectoAdverso']
+                                .toString()
+                                .trim()
+                                .isNotEmpty &&
+                            item['efectoAdverso'] != '-'),
+                  ),
                 ],
               ),
             ),

@@ -119,7 +119,7 @@ class _DetalleUsuarioScreenState extends State<DetalleUsuarioScreen> {
       ),
       _botonCuadrado(
         icon: Image.asset('assets/icons/crisis.png', width: 40, height: 40),
-        label: 'Alertas personalizadas',
+        label: 'Alertas preventivas',
         onPressed: () {
           Navigator.push(
             context,
@@ -162,6 +162,7 @@ class _DetalleUsuarioScreenState extends State<DetalleUsuarioScreen> {
           );
         },
       ),
+      /*
       _botonCuadrado(
         icon: Icon(Icons.add_alert, size: 48),
         label: 'Alertas',
@@ -175,7 +176,7 @@ class _DetalleUsuarioScreenState extends State<DetalleUsuarioScreen> {
         onPressed: () async {
           await AlertasTomaMedicacion.cancelAllNotifications();
         },
-      ),
+      ),*/
     ];
 
     return Scaffold(

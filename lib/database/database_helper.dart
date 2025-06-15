@@ -18,7 +18,7 @@ class DatabaseHelper {
 
   Future<Database> _initDatabase() async {
     final dbPath = await getDatabasesPath();
-    final path = join(dbPath, 'AplicacionMedicamentos.db');
+    final path = join(dbPath, 'CronoTerapia.db');
 
     //final exists = await databaseExists(path);
 

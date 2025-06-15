@@ -59,7 +59,7 @@ class _AlertasPersonalizadasState extends State<AlertasPersonalizadasScreen> {
       final desc = efecto.descripcion.toLowerCase();
       if (['náuseas', 'diarrea', 'estreñimiento'].contains(desc)) {
         alertas.add(
-          'Has reportado efectos digestivos anteriormente. Mantente hidratado y consulta si persisten.',
+          'Has reportado efectos digestivos anteriormente. Mantente hidratado y consulta con un profesional si persisten.',
         );
       } else if (['somnolencia/sedación', 'fatiga', 'mareos'].contains(desc)) {
         alertas.add(
@@ -71,7 +71,7 @@ class _AlertasPersonalizadasState extends State<AlertasPersonalizadasScreen> {
         'hipotensión',
       ].contains(desc)) {
         alertas.add(
-          'Has experimentado síntomas cardiovasculares. Consulta si notas alteraciones persistentes.',
+          'Has experimentado síntomas cardiovasculares. Consulta con un profesional si notas alteraciones persistentes.',
         );
       } else if (['insomnio', 'depresión'].contains(desc)) {
         alertas.add(
@@ -109,12 +109,12 @@ class _AlertasPersonalizadasState extends State<AlertasPersonalizadasScreen> {
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 211, 211, 236),
-      appBar: AppBar(title: const Text("Alertas Personalizadas")),
+      appBar: AppBar(title: const Text("Alertas Preventivas")),
       body:
           _alertas.isEmpty
               ? const Center(
                 child: Text(
-                  'No hay alertas personalizadas',
+                  'No hay alertas preventivas',
                   style: TextStyle(fontSize: 16),
                 ),
               )

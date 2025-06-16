@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '/presentation/screens/crear_usuario_screen.dart';
 import '/presentation/screens/editar_usuario_screen.dart';
 import '/presentation/screens/detalle_usuario_screen.dart';
-import '/presentation/screens/alertas_toma_medicacion.dart';
+//import '/presentation/screens/alertas_toma_medicacion.dart';
 import '/database/database_helper.dart';
-import 'package:sqflite/sqflite.dart';
+//import 'package:sqflite/sqflite.dart';
 import 'package:android_intent_plus/android_intent.dart';
 import 'package:android_intent_plus/flag.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -91,7 +91,7 @@ class _MainScreenState extends State<MainScreen> {
             softWrap: true,
           ),
         ),
-        actions: [
+        /*actions: [
           IconButton(
             icon: Icon(Icons.delete_forever),
             tooltip: 'Borrar base de datos',
@@ -110,7 +110,7 @@ class _MainScreenState extends State<MainScreen> {
               );
             },
           ),
-        ],
+        ],*/
       ),
 
       body: Padding(

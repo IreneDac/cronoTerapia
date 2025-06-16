@@ -23,6 +23,7 @@ class DetalleUsuarioScreen extends StatefulWidget {
 class _DetalleUsuarioScreenState extends State<DetalleUsuarioScreen> {
   @override
   Widget build(BuildContext context) {
+    AlertasTomaMedicacion.init(widget.usuario['id']);
     final List<Widget> botones = [
       _botonCuadrado(
         icon: Image.asset('assets/icons/drugs.png', width: 40, height: 40),

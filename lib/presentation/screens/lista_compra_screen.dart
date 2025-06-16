@@ -71,7 +71,7 @@ class _ListaCompraMedicamentosScreenState
             crossAxisAlignment: pw.CrossAxisAlignment.start,
             children: [
               pw.Text(
-                'Lista de Medicamentos por Reponer',
+                'Lista de compra',
                 style: pw.TextStyle(
                   fontSize: 24,
                   fontWeight: pw.FontWeight.bold,
@@ -121,7 +121,7 @@ class _ListaCompraMedicamentosScreenState
     );
 
     final directory = await getExternalStorageDirectory();
-    final path = "${directory!.path}/lista_medicamentos_$formattedDate.pdf";
+    final path = "${directory!.path}/lista_compra_$formattedDate.pdf";
     final file = File(path);
     await file.writeAsBytes(await pdf.save());
 

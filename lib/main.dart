@@ -67,7 +67,7 @@ class _MainScreenState extends State<MainScreen> {
   void initState() {
     super.initState();
     _loadUsuarios();
-    AlertasTomaMedicacion.init();
+    //AlertasTomaMedicacion.init();
   }
 
   Future<void> _loadUsuarios() async {
@@ -91,7 +91,7 @@ class _MainScreenState extends State<MainScreen> {
             softWrap: true,
           ),
         ),
-        /*actions: [
+        actions: [
           IconButton(
             icon: Icon(Icons.delete_forever),
             tooltip: 'Borrar base de datos',
@@ -110,7 +110,7 @@ class _MainScreenState extends State<MainScreen> {
               );
             },
           ),
-        ],*/
+        ],
       ),
 
       body: Padding(

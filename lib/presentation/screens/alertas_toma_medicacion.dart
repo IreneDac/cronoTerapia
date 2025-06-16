@@ -9,10 +9,15 @@ import 'dart:convert';
 class AlertasTomaMedicacion {
   static int _idUsuario = 0;
 
+  static void setIdUsuario(int id) {
+    _idUsuario = id;
+  }
+
   static final flutterLocalNotificationsPlugin =
       FlutterLocalNotificationsPlugin();
 
-  static Future<void> init() async {
+  static Future<void> init(int idUsuario) async {
+    setIdUsuario(idUsuario);
     tz.initializeTimeZones();
 
     const androidInitSettings = AndroidInitializationSettings(
